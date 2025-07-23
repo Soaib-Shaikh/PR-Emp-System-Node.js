@@ -59,7 +59,10 @@ A simple Employee Management System built with Node.js, Express, and EJS. This a
 - [Node.js](https://nodejs.org/) installed
 
 ### Installation
-1. Clone the repository or download the source code.
+1. Clone the repository:
+   ```
+   git clone https://github.com/Soaib-Shaikh/PR-Emp-System-Node.js.git
+   ```
 2. Navigate to the project directory.
 3. Install dependencies:
    ```
