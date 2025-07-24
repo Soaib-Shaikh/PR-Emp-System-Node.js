@@ -29,7 +29,7 @@
             </form>
 
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-12">
                     <table class="table table-bordered table-striped caption-top text-center table-hover">
                         <caption>
                             <h1>Employee Data</h1>
@@ -40,6 +40,8 @@
                                 <th>Employee Name</th>
                                 <th>Employee Department</th>
                                 <th>Employee Salary</th>
+                                <th>Employee Task</th>
+                                <th>Employee Task Description</th>
                                 <th>Action</th>
                             </tr>
                         </thead>
@@ -58,9 +60,17 @@
                                     <td>
                                         <%= emp.salary %>
                                     </td>
-                                    <td class="gap-3">
+                                    <td>
+                                        <%= emp.task %>
+                                    </td>
+                                     <td>
+                                        <%= emp.description %>
+                                    </td>
+
+                                    <td class="gap-3 d-flex">
                                         <a href="/emp/delete/<%= emp.id %>" class="btn btn-danger">Delete</a>
                                         <a href="/emp/edit/<%= emp.id %>" class="btn btn-warning">Edit</a>
+                                        <a href="/emp/task/<%= emp.id %>" class="btn btn-success">Task</a>
                                     </td>
                                 </tr>
                                 <% }) %>

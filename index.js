@@ -75,6 +75,27 @@ app.get('/emp/view', (req, res) => {
     res.render('viewdata', { employees: results });
 });
 
+// Task Assign
+
+app.get('/emp/task/:id',(req,res)=>{
+    let id = Number(req.params.id);
+    let employee = employees.find(employee => employee.id === id);
+    if (!employee) return res.send("employee not found");
+    res.render('task', { employee });
+})
+
+app.post('/emp/task/:id',(req,res)=>{
+    let id = Number(req.params.id);
+    let employee = employees.find(employee => employee.id === id);
+    if (!employee){
+        return res.send("employee not found");
+    }
+
+    employee.task = req.body.task;
+    employee.description = req.body.description;
+    return res.redirect('/viewdata')
+})
+
 app.listen(port,(err)=>{
     if(err){
         console.log(err);

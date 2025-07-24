@@ -1,28 +1,15 @@
 # Employee Management System (Node.js)
 
-A simple Employee Management System built with Node.js, Express, and EJS. This application allows you to add, view, edit, search and delete employee records in-memory (no database required).
+A comprehensive Employee Management System built with Node.js, Express, and EJS. This application allows you to add, view, edit, search, assign tasks, and delete employee records, all managed in-memory (no database required). It features a clean UI and is ideal for learning or demonstration purposes.
 
-# Output 
-
-1. Add Employee
-
-![alt text](./output/add-emp.png)
-
-2. View Employees Data
-
-![alt text](./output/view-emp.png)
-
-3. Edit Employee
-
-![alt text](./output/edit-emp.png)
-
-4. Delete Employee
-
-![alt text](./output/delete-emp.png)
-
-5. Search Employee
-
-![alt text](./output/search-emp.png)
+## Table of Contents
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Folder Structure](#folder-structure)
+- [Screenshots](#screenshots)
+- [Getting Started](#getting-started)
+- [Usage](#usage)
+- [Notes](#notes)
 
 ## Features
 - Add new employees
@@ -30,6 +17,7 @@ A simple Employee Management System built with Node.js, Express, and EJS. This a
 - Edit employee details
 - Delete employees
 - Search employees
+- Assign tasks to employees
 - Simple and clean UI with EJS templates
 - In-memory data storage (no database setup required)
 
@@ -38,6 +26,7 @@ A simple Employee Management System built with Node.js, Express, and EJS. This a
 - **Express.js**
 - **EJS** (Embedded JavaScript Templates)
 - **HTML/CSS** (static files served from `public/`)
+- **Bootstrap 5** (for responsive UI)
 
 ## Folder Structure
 ```
@@ -50,8 +39,37 @@ A simple Employee Management System built with Node.js, Express, and EJS. This a
 │   ├── edit.ejs
 │   ├── header.ejs
 │   ├── index.ejs
-│   └── viewdata.ejs
+│   ├── viewdata.ejs
+│   └── task.ejs
+├── output/                # Screenshots for documentation
+│   ├── add-emp.png
+│   ├── view-emp.png
+│   ├── edit-emp.png
+│   ├── delete-emp.png
+│   └── search-emp.png
 ```
+
+## Screenshots
+
+1. Add Employee
+
+   ![Add Employee](./output/add-emp.png)
+
+2. View Employees Data
+
+   ![View Employees](./output/view-emp.png)
+
+3. Edit Employee
+
+   ![Edit Employee](./output/edit-emp.png)
+
+4. Delete Employee
+
+   ![Delete Employee](./output/delete-emp.png)
+
+5. Search Employee
+
+   ![Search Employee](./output/search-emp.png)
 
 ## Getting Started
 
@@ -81,10 +99,11 @@ The app will be available at [http://localhost:8081](http://localhost:8081)
 - Go to the home page to add a new employee.
 - View all employees at `/viewdata`.
 - Edit or delete employees from the view page.
+- Assign tasks to employees using the task assignment form.
+- Search for employees by name, department, or other criteria.
 
 ## Notes
 - All data is stored in memory. Restarting the server will clear all employee records.
 - This project is for learning/demo purposes and does not use a database.
+- You can customize the UI by editing the EJS templates and CSS files.
 
-## License
-This project is open source and available under the [MIT License](LICENSE).
