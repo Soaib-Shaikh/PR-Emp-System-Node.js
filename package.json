@@ -1,6 +1,29 @@
 {
+  "name": "pr-emp-system-node",
+  "version": "1.0.0",
+  "description": "A comprehensive Employee Management System built with Node.js, Express, and EJS. This application allows you to add, view, edit, search, assign tasks, and delete employee records, all managed in-memory (no database required). It features a clean UI and is ideal for learning or demonstration purposes.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+      
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Soaib-Shaikh/PR-Emp-System-Node.js.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Soaib-Shaikh/PR-Emp-System-Node.js/issues"
+  },
+  "homepage": "https://github.com/Soaib-Shaikh/PR-Emp-System-Node.js#readme",
   "dependencies": {
     "ejs": "^3.1.10",
-    "express": "^5.1.0"
+    "express": "^5.1.0",
+    "nodemon": "^3.1.10"
   }
 }
