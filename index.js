@@ -60,7 +60,9 @@ app.post('/emp/edit/:id', (req, res) => {
         empid: req.body.empid,
         empname: req.body.empname,
         department: req.body.department,
-        salary: req.body.salary
+        salary: req.body.salary,
+        task: '',
+        description: ''
     };
 
     res.redirect('/viewdata');
